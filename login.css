@@ -62,7 +62,7 @@
 
     .panel {
       width: 50%;
-      background-color: #3a6996;
+      background-color: rgba(131, 58, 180, 1);
       color: white;
       display: flex;
       flex-direction: column;
