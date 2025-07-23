@@ -73,15 +73,19 @@ body {
 }
 
 .line1 {
-    width: 60%;
+    width: 2.3vw;
     height: 2.7px;
     background-color: #fff;
     border-radius: 50px;
 }
 
 .line2 {
-    width: 100%;
+    width: 3.5vw;
     height: 2.7px;
     background-color: #fff;
     border-radius: 50px;
+}
+
+.line {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
