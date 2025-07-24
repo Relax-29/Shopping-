@@ -3,6 +3,7 @@ const panel = document.getElementById('togglePanel');
 const toggleBtn = document.getElementById('toggleBtn');
 const signinLink = document.getElementById('signin');
 const signupLink = document.getElementById('signup');
+var close = document.querySelector(".closed");
 
 let signUpMode = false;
 
@@ -28,11 +29,16 @@ function updatePanel(mode) {
     signUpMode = false;
   }
 
-  // Re-bind toggleBtn
+  // Re-bind toggle button
   document.getElementById('toggleBtn').addEventListener('click', () => {
     updatePanel(signUpMode ? 'signin' : 'signup');
   });
+
+  // ✅ Re-select and recolor the .closed button every time
+  close = document.querySelector(".closed");
+  close.style.color = mode === "signup" ? "black" : "#fff";
 }
+
 
 // Toggle button inside the login panel
 toggleBtn.addEventListener('click', () => {
@@ -41,12 +47,11 @@ toggleBtn.addEventListener('click', () => {
 
 // Nav bar buttons
 signinLink.addEventListener('click', (e) => {
-  e.preventDefault();
+  e.preventDefault(); 
   updatePanel('signin');
-  
 });
 
 signupLink.addEventListener('click', (e) => {
-  e.preventDefault();
+  e.preventDefault(); 
   updatePanel('signup');
-});
+}); 

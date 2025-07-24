@@ -31,7 +31,6 @@
 }
 
 .form h2 {
-  color: #3a6996;
   margin-bottom: 20px;
 }
 
@@ -44,8 +43,7 @@
 
 .form button {
   margin-top: 15px;
-  padding: 12px;
-  background-color: #3a6996;
+  padding: 12px;;
   color: white;
   border: none;
   font-size: 16px;
@@ -58,6 +56,22 @@
   text-align: right;
   color: #888;
   text-decoration: none;
+}
+
+#signInForm h2{
+  color: rgba(131, 58, 180, 1);
+}
+
+#signInForm button {
+  background-color: rgba(131, 58, 180, 1);
+}
+
+#signUpForm h2{
+  color: rgba(245, 88, 88, 1);
+}
+
+#signUpForm button {
+  background-color: rgba(245, 88, 88, 1);
 }
 
 .panel {

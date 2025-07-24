@@ -26,26 +26,39 @@ menu.addEventListener("click", function () {
 
 signin.addEventListener("click", function () {
   loginPage.style.display = "block";
+  blur.style.display = "block";
+
+  setTimeout(() => {
+    loginPage.classList.add("show");
+    blur.classList.add("show");
+  }, 10);
+
   document.body.style.overflow = "hidden";
   close.style.color = "#fff";
-  close.style.transition = "all 0.5s ease-in-out";
-  blur.style.display = "block";
-  blur.style.transition = "all 0.5s ease-in-out";
   updatePanel("signin");
 });
 
 signup.addEventListener("click", function () {
   loginPage.style.display = "block";
+  blur.style.display = "block";
+
+  setTimeout(() => {
+    loginPage.classList.add("show");
+    blur.classList.add("show");
+  }, 10);
+
   document.body.style.overflow = "hidden";
   close.style.color = "black";
-  blur.style.display = "block";
-  blur.style.transition = "all 0.5s ease-in-out";
-  updatePanel("signin");
+  updatePanel("signup");
 });
 
 close.addEventListener("click", function () {
-  loginPage.style.display = "none";
+  loginPage.classList.remove("show");
+  blur.classList.remove("show");
+
+  setTimeout(() => {
+    loginPage.style.display = "none";
+    blur.style.display = "none";
+  }, 400); // match the transition duration
   document.body.style.overflow = "auto";
-  blur.style.display = "none";
-  blur.style.transition = "all 0.5s ease-in-out";
 });
