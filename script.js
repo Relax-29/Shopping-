@@ -3,7 +3,10 @@ var line2 = document.querySelector(".line2");
 var menu = document.querySelector(".menu");
 var signin = document.querySelector("#signin");
 var signup = document.querySelector("#signup");
-var loginPage = document.querySelector(".login-body");
+var loginPage = document.querySelector(".login-container");
+var sign = document.querySelector(".sign");
+var close = document.querySelector(".closed");
+var blur = document.querySelector(".blur");
 
 var flag = 0;
 menu.addEventListener("click", function () {
@@ -21,52 +24,28 @@ menu.addEventListener("click", function () {
   }
 });
 
-var init = 0;
-
-// Helper function to open login page with correct mode
-function openLogin(mode) {
-  loginPage.style.display = "flex";
-  init = 1;
-
-  // Update panel based on mode
-  const panel = document.getElementById("togglePanel");
-  const container = document.getElementById("container");
-
-  if (mode === "signin") {
-    container.classList.remove("active");
-    panel.innerHTML = `
-      <h2>Hello, Friend!</h2>
-      <p>Enter your personal details<br>and start your journey with us</p>
-      <button id="toggleBtn">SIGN UP</button>
-    `;
-    panel.style.backgroundColor = "rgba(131, 58, 180, 1)";
-  } else {
-    container.classList.add("active");
-    panel.innerHTML = `
-      <h2>Welcome Back!</h2>
-      <p>To keep connected with us<br>please login with your personal info</p>
-      <button id="toggleBtn">SIGN IN</button>
-    `;
-    panel.style.backgroundColor = "rgba(245, 88, 88, 1)";
-  }
-
-  // Rebind button
-  document.getElementById('toggleBtn').addEventListener('click', () => {
-    openLogin(mode === "signin" ? "signup" : "signin");
-  });
-}
-
-signin.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (init === 0) {
-    openLogin("signin");
-  }
+signin.addEventListener("click", function () {
+  loginPage.style.display = "block";
+  document.body.style.overflow = "hidden";
+  close.style.color = "#fff";
+  close.style.transition = "all 0.5s ease-in-out";
+  blur.style.display = "block";
+  blur.style.transition = "all 0.5s ease-in-out";
+  updatePanel("signin");
 });
 
-signup.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (init === 0) {
-    openLogin("signup");
-  }
-  
+signup.addEventListener("click", function () {
+  loginPage.style.display = "block";
+  document.body.style.overflow = "hidden";
+  close.style.color = "black";
+  blur.style.display = "block";
+  blur.style.transition = "all 0.5s ease-in-out";
+  updatePanel("signin");
+});
+
+close.addEventListener("click", function () {
+  loginPage.style.display = "none";
+  document.body.style.overflow = "auto";
+  blur.style.display = "none";
+  blur.style.transition = "all 0.5s ease-in-out";
 });
