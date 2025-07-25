@@ -7,6 +7,7 @@ var loginPage = document.querySelector(".login-container");
 var sign = document.querySelector(".sign");
 var close = document.querySelector(".closed");
 var blur = document.querySelector(".blur");
+var menubar = document.querySelector(".menubar");
 
 var flag = 0;
 menu.addEventListener("click", function () {

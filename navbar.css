@@ -125,3 +125,11 @@
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 
+.menubar {
+  opacity: 0;
+  right: 0%;
+  top: 2%;
+  width: 5vw;
+  height: 20vh;
+  background-color: #fff;
+}
