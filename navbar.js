@@ -63,3 +63,14 @@ close.addEventListener("click", function () {
   }, 400); // match the transition duration
   document.body.style.overflow = "auto";
 });
+
+var init = 0;
+menu.addEventListener("click", function () {
+  if (init === 0) {
+    menubar.style.opacity = "1";
+    init = 1;
+  } else {
+    menubar.style.opacity = "0";
+    init = 0;
+  }
+});

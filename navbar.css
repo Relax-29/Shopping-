@@ -127,9 +127,10 @@
 
 .menubar {
   opacity: 0;
-  right: 0%;
-  top: 2%;
-  width: 5vw;
-  height: 20vh;
+  position: absolute;
+  right: 1vw;
+  top: 10vh;
+  width: 15vw;
+  height: 35vh;
   background-color: #fff;
 }
