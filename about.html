@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="nav">
+      <div class="logo">
+        <img src="" alt="Logo" />
+        <h1>VibeBuy</h1>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="login">
+        <a id="signin" class="sign" href="#">Sign In</a>
+        <a id="signup" class="sign" href="#">Sign Up</a>
+        <div class="menu">
+          <div class="line1 line"></div>
+          <div class="line2 line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Page -->
+    <section class="login-body">
+      <div class="blur"></div>
+      <div class="login-container">
+        <i class="ri-close-line closed"></i>
+        <div class="container" id="container">
+          <!-- Login Form -->
+          <div class="form-section login-section">
+            <form class="form" id="signInForm">
+              <h2>Sign In</h2>
+              <div align="center">
+                <img
+                  src="https://www.google.com/imgres?q=image%20skill&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1388635225%2Fphoto%2Fbusinessman-click-on-skills.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DlsCABr8nyaj9E2gFnAuo5V0V_JnGz4d43IZVheP7eoo%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fskill&docid=FaosrRz1SJZsZM&tbnid=RckcB4evwFwfPM&vet=12ahUKEwik27vKrraOAxVSm2MGHfq1AIsQM3oECBYQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwik27vKrraOAxVSm2MGHfq1AIsQM3oECBYQAA"
+                  alt="Logo"
+                  width="10"
+                  height="10"
+                /><br /><br />
+              </div>
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
+              <a href="#">Forgot your password?</a>
+              <button type="submit">SIGN IN</button>
+            </form>
+          </div>
+
+          <!-- Signup Form -->
+          <div class="form-section signup-section">
+            <form class="form" id="signUpForm">
+              <h2>Create Account</h2>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
+              <button type="submit">SIGN UP</button>
+            </form>
+          </div>
+
+          <!-- Sliding Panel -->
+          <div class="panel" id="togglePanel">
+            <h2>Hello, Friend!</h2>
+            <p>
+              Enter your personal details<br />and start your journey with us
+            </p>
+            <button id="toggleBtn">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
