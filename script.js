@@ -23,7 +23,7 @@ tl
         y: 0,
         scale: 1,
         ease: Expo.easeInOut,
-        duration: 1,
+        duration: 2,
         stagger: 1.1,
-        delay: -1.5,
+        delay: -3,
     })
