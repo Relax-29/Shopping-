@@ -98,5 +98,5 @@ body {
 .head {
   display: flex;
   flex-direction: row-reverse;
-  padding: 40px;
+  padding: 30px;
 }
