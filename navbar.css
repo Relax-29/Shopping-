@@ -24,6 +24,19 @@
   padding: 0 25px;
 }
 
+.logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+}
+
+.logo-div .logo {
+  margin-top: 15px;
+  width: 7.5vw;
+  height: auto;
+}
+
 .links {
   display: flex;
   align-items: center;
