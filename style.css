@@ -95,3 +95,8 @@ body {
   color: #fff;
 }
 
+.head {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 40px;
+}

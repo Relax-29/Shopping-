@@ -133,4 +133,5 @@
   width: 15vw;
   height: 35vh;
   background-color: #fff;
+  z-index: 1000;
 }
