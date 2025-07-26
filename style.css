@@ -95,9 +95,3 @@ body {
   color: #fff;
 }
 
-.hero-section .highlight {
-  font-family: "attila", sans-serif;
-  font-size: 3rem;
-  color: yellow;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-}
