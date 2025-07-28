@@ -38,12 +38,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.product {
-  position: absolute;
-  top: 10vh;
-
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -142,8 +136,14 @@ p {
 
 /* New porducts cards */
 .product {
+  position: absolute;
+  top: 10vh;
+}
+
+#productdiv {
+  margin-bottom: 20px;
   width: 99vw;
-  height: 100vh;
+  height: auto;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
@@ -160,6 +160,7 @@ p {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .product-card img {
@@ -189,17 +190,46 @@ p {
 }
 
 .product-card button {
+  width: 80%;
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #28a745;
   color: white;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .product-card button:hover {
   background: #218838;
+  box-shadow: #ccc 0px 0px 5px;
 }
 
-.product-card 
+.product-card button:active {
+  transform: scale(0.98);
+}
+
+.product-card button:focus {
+  outline: none;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
