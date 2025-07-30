@@ -116,9 +116,9 @@ body {
 }
 
 .topList h1 {
-  font-family: "attila", sans-serif; 
+  font-family: "havelock", sans-serif;
+  left: 0%;
   font-size: 2.5rem;
-  letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
 
