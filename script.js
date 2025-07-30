@@ -30,13 +30,6 @@ function animation() {
       opacity: 0,
       duration: 0.4,
     }, "-=1"); 
-
-    tl2.from(".section1bottom img", {
-      opacity: 0,
-      y: 30,
-      stagger: 0.15,
-      duration: 0.6,
-    });
   }
   
   animation();

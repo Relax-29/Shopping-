@@ -106,20 +106,6 @@ body {
   padding: 30px;
 }
 
-.section1bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 110px;
-  flex-wrap: wrap;
-  gap: 0px;
-}
-
-.section1bottom img {
-  height: 60px;
-  object-fit: contain;
-}
-
 .topList {
   width: 100%;
   height: 100vh;
