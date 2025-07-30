@@ -43,7 +43,7 @@ function animation() {
       markers: false, 
       start: "top 80%",
       end: "top 60%",
-      scrub: 2,
+      scrub: 1.5,
     }
   });
   
