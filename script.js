@@ -1,4 +1,4 @@
-function page1animation() {
+function animation() {
     const tl2 = gsap.timeline();
   
     tl2.from('#nav', {
@@ -39,7 +39,7 @@ function page1animation() {
     });
   }
   
-  page1animation();
+  animation();
   
   
   // Scroll-triggered animation
