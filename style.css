@@ -101,8 +101,18 @@ body {
   padding: 30px;
 }
 
+#topListDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .topList h1 {
-  text-align: center;
+  font-family: "attila", sans-serif; 
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
 
@@ -117,12 +127,13 @@ body {
 
 .card {
   position: relative;
-  width: 15vw;
+  width: 12vw;
   height: 30vh;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-bottom: 30px;
+  margin-left: 1rem;
 }
 
 .card img {
@@ -137,16 +148,13 @@ body {
 
 .card h3 {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 1.5rem;
   z-index: 999;
 }
 
-.card:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
-}
-
 .card img:hover {
-  transform: scale(1.05);
+  transform: scale(1.25);
   transition: transform 0.3s ease;
 }
