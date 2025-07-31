@@ -4,6 +4,8 @@
 }
 
 .login-body {
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
   position: absolute;
   top: 10vh;
   left: 0;
@@ -58,6 +60,7 @@
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
 }
 
 .form-section {

@@ -28,7 +28,10 @@ menu.addEventListener("click", function () {
 signin.addEventListener("click", function () {
   loginPage.style.display = "block";
   blur.style.display = "block";
-
+  document.querySelector(".login-body").style.zIndex = "9999";
+  document.querySelector(".blur").style.zIndex = "9998";
+  document.querySelector(".login-container").style.zIndex = "9999";
+  document.querySelector(".closed").style.zIndex = "99999";
   setTimeout(() => {
     loginPage.classList.add("show");
     blur.classList.add("show");
@@ -42,6 +45,10 @@ signin.addEventListener("click", function () {
 signup.addEventListener("click", function () {
   loginPage.style.display = "block";
   blur.style.display = "block";
+  document.querySelector(".login-body").style.zIndex = "9999";
+  document.querySelector(".blur").style.zIndex = "9998";
+  document.querySelector(".login-container").style.zIndex = "9999";
+  document.querySelector(".closed").style.zIndex = "99999";
 
   setTimeout(() => {
     loginPage.classList.add("show");
@@ -56,6 +63,10 @@ signup.addEventListener("click", function () {
 close.addEventListener("click", function () {
   loginPage.classList.remove("show");
   blur.classList.remove("show");
+    document.querySelector(".login-body").style.zIndex = "auto";
+  document.querySelector(".blur").style.zIndex = "auto";
+  document.querySelector(".login-container").style.zIndex = "auto";
+  document.querySelector(".closed").style.zIndex = "auto";
 
   setTimeout(() => {
     loginPage.style.display = "none";

@@ -52,6 +52,7 @@ body {
   width: calc(100vw-1vw);
   min-height: auto;
   position: relative;
+  z-index: 99;
 }
 
 #heading {
