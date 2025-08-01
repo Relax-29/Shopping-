@@ -223,6 +223,7 @@ body {
   background-color: #fff;
   margin: 5px 0;
   border-radius: 50px;
+  margin-bottom: 50px;
   /* transform: scaleX(0);
   transition: transform 0.3s ease-in-out; */
 }
