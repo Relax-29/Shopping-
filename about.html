@@ -1,157 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="shortcut icon" type="x-icon" href="image/logo.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="login.css" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <div id="nav">
-      <div class="logo-div">
-        <img class="logo" src="/image/logo.png" alt="Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deals</title>
+  <link rel="shortcut icon" type="x-icon" href="image/logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div id="nav">
+    <div class="logo-div">
+      <img class="logo" src="/image/logo.png" alt="Logo" />
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html" class="active">What's New</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <input
+      class="inp search-input px-4 py-2 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      type="text" placeholder="Search..." />
+    <div class="login">
+      <a id="signin" class="sign" href="#">Sign In</a>
+      <a id="signup" class="sign" href="#">Sign Up</a>
+      <div class="menu">
+        <div class="line1 line"></div>
+        <div class="line2 line"></div>
       </div>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html" class="active">What's New</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <input
-        class="inp search-input px-4 py-2 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        type="text"
-        placeholder="Search..."
-      />
-      <div class="login">
-        <a id="signin" class="sign" href="#">Sign In</a>
-        <a id="signup" class="sign" href="#">Sign Up</a>
-        <div class="menu">
-          <div class="line1 line"></div>
-          <div class="line2 line"></div>
+    </div>
+  </div>
+  <div class="menubar">
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+  </div>
+  <!-- Login Page -->
+  <section class="login-body">
+    <div class="blur"></div>
+    <div class="login-container">
+      <i class="ri-close-line closed"></i>
+      <div class="container" id="container">
+        <!-- Login Form -->
+        <div class="form-section login-section">
+          <form class="form" id="signInForm">
+            <h2>Sign In</h2>
+            <div align="center">
+              <img src="/image/logo.png" alt="Logo" width="90vw" height="90vh" /><br /><br />
+            </div>
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <a href="#">Forgot your password?</a>
+            <button type="submit">SIGN IN</button>
+          </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-section signup-section">
+          <form class="form" id="signUpForm">
+            <h2>Create Account</h2>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">SIGN UP</button>
+          </form>
+        </div>
+
+        <!-- Sliding Panel -->
+        <div class="panel" id="togglePanel">
+          <h2>Hello, Friend!</h2>
+          <p>
+            Enter your personal details<br />and start your journey with us
+          </p>
+          <button id="toggleBtn">SIGN UP</button>
         </div>
       </div>
     </div>
-    <div class="menubar">
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-    </div>
-    <!-- Login Page -->
-    <section class="login-body">
-      <div class="blur"></div>
-      <div class="login-container">
-        <i class="ri-close-line closed"></i>
-        <div class="container" id="container">
-          <!-- Login Form -->
-          <div class="form-section login-section">
-            <form class="form" id="signInForm">
-              <h2>Sign In</h2>
-              <div align="center">
-                <img
-                  src="/image/logo.png"
-                  alt="Logo"
-                  width="90vw"
-                  height="90vh"
-                /><br /><br />
+  </section>
+
+  <section class="todayDeals">
+    <div id="maintdydeal">
+      <h2>Today's Deals</h2>
+      <div id="tdyDeal-container">
+        <div class="tdy-cardDeals">
+          <div class="image">
+            <img src="image/Canon 5D Mark IV DSLR Camera.png" alt="Deal Image" />
+            <div class="heart">
+              <div class="shapes">
+                <i class="ri-heart-line whiteHeart"></i>
+                <i class="ri-heart-fill blackHeart"></i>
               </div>
-              <input type="email" placeholder="Email" required />
-              <input type="password" placeholder="Password" required />
-              <a href="#">Forgot your password?</a>
-              <button type="submit">SIGN IN</button>
-            </form>
+            </div>
           </div>
-
-          <!-- Signup Form -->
-          <div class="form-section signup-section">
-            <form class="form" id="signUpForm">
-              <h2>Create Account</h2>
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email" required />
-              <input type="password" placeholder="Password" required />
-              <button type="submit">SIGN UP</button>
-            </form>
+          <h3>Canon 5D Mark IV DSLR Camera</h3>
+          <p>DSLR Camera with 24-105mm F/4L II Lens</p>
+          <div class="priceDiv">
+            <span>Price: $XX.XX</span>
+            <button>Add to Cart</button>
           </div>
-
-          <!-- Sliding Panel -->
-          <div class="panel" id="togglePanel">
-            <h2>Hello, Friend!</h2>
-            <p>
-              Enter your personal details<br />and start your journey with us
-            </p>
-            <button id="toggleBtn">SIGN UP</button>
+        </div>
+        <div class="tdy-cardDeals">
+          <div class="image">
+            <img src="image/Samsung Galaxy S21 Ultra.png" alt="Deal Image" />
+            <div class="heart">
+              <div class="shapes">
+                <i class="ri-heart-line whiteHeart"></i>
+                <i class="ri-heart-fill blackHeart"></i>
+              </div>
+            </div>
+          </div>
+          <h3>Samsung Galaxy S21 Ultra</h3>
+          <p>Smartphone with 108MP Camera</p>
+          <div class="priceDiv">
+            <span>Price: $XX.XX</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="tdy-cardDeals">
+          <div class="image">
+            <img src="image/Apple MacBook Pro 16.png" alt="Deal Image" />
+            <div class="heart">
+              <div class="shapes">
+                <i class="ri-heart-line whiteHeart"></i>
+                <i class="ri-heart-fill blackHeart"></i>
+              </div>
+            </div>
+          </div>
+          <h3>Apple MacBook Pro 16"</h3>
+          <p>Latest Model with M1 Chip</p>
+          <div class="priceDiv">
+            <span>Price: $XX.XX</span>
+            <button>Add to Cart</button>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="todayDeals">
-      <div id="maintdydeal">
-        <h2>Today's Deals</h2>
-        <div id="tdyDeal-container">
-          <div class="tdy-cardDeals">
-            <div class="image">
-              <img
-                src="image/Canon 5D Mark IV DSLR Camera.png"
-                alt="Deal Image"
-              />
-              <div class="heart">
-                <i class="ri-heart-line color"></i>
-              </div>
-            </div>
-            <h3>Canon 5D Mark IV DSLR Camera</h3>
-            <p>DSLR Camera with 24-105mm F/4L II Lens</p>
-            <div class="priceDiv">
-              <span>Price: $XX.XX</span>
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="tdy-cardDeals">
-            <div class="image">
-              <img
-                src="image/Samsung Galaxy S21 Ultra.png"
-                alt="Deal Image"
-              />
-              <div class="heart">
-                <i class="ri-heart-line color"></i>
-              </div>
-            </div>
-            <h3>Samsung Galaxy S21 Ultra</h3>
-            <p>Smartphone with 108MP Camera</p>
-            <div class="priceDiv">
-              <span>Price: $XX.XX</span>
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="tdy-cardDeals">
-            <div class="image">
-              <img
-                src="image/Apple MacBook Pro 16.png"
-                alt="Deal Image"
-              />
-              <div class="heart">
-                <i class="ri-heart-line color"></i>
-              </div>
-            </div>
-            <h3>Apple MacBook Pro 16"</h3>
-            <p>Latest Model with M1 Chip</p>
-            <div class="priceDiv">
-              <span>Price: $XX.XX</span>
-              <button>Add to Cart</button>
-            </div>
-        </div>
-      </div>
-    </section>
-    <!-- <section class="herosection">
+  </section>
+  <!-- <section class="herosection">
       <div class="container">
         <div class="category">
           
@@ -159,8 +151,9 @@
       </div>
     </section> -->
 
-    <script src="script.js"></script>
-    <script src="navbar.js"></script>
-    <script src="login.js"></script>
-  </body>
+  <script src="script.js"></script>
+  <script src="navbar.js"></script>
+  <script src="login.js"></script>
+</body>
+
 </html>
