@@ -129,3 +129,8 @@ inp.addEventListener("input", function () {
     NoUserFound();
   }
 });
+
+
+// Add to Card
+
+var AddToCard = document.querySelectorAll(".product-card button");

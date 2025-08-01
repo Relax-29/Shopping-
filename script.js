@@ -1,4 +1,5 @@
 function animation() {
+
     const tl2 = gsap.timeline();
   
     tl2.from('#nav', {
@@ -60,3 +61,4 @@ function animation() {
     stagger:0.5,
   },"sametime");
   
+
