@@ -79,9 +79,11 @@ var init = 0;
 menu.addEventListener("click", function () {
   if (init === 0) {
     menubar.style.opacity = "1";
+    menubar.style.zIndex = "1000";
     init = 1;
   } else {
     menubar.style.opacity = "0";
+    menubar.style.zIndex = "auto";
     init = 0;
   }
 });

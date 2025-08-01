@@ -96,11 +96,19 @@ body {
   border-radius: 50%;
   padding: 5px;
   color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .color {
   color: #000;
   font-size: 25px;
+  cursor: pointer;
+}
+
+.heart:hover {
+  background-color: #3cbfea;
+  color: #fff;
 }
 
 .tdy-cardDeals img {
