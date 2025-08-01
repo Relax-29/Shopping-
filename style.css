@@ -24,6 +24,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+  z-index: 99;
 }
 
 html,
@@ -51,15 +52,7 @@ body {
 .hero-content {
   width: calc(100vw-1vw);
   min-height: auto;
-  position: relative;
-  z-index: 99;
-}
-
-#heading {
-  position: absolute;
-  left: 10%;
-  top: 40%;
-  transform: translate(-20%, -20%);
+ 
 }
 
 .hero-section h1 {
@@ -88,7 +81,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  z-index: 4;
+  z-index: 99;
   cursor: pointer;
 }
 
@@ -99,7 +92,9 @@ body {
 
 .head {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 30px;
 }
 
@@ -164,4 +159,38 @@ body {
 .card img:hover {
   transform: scale(1.25);
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 1299px) { 
+    .hero-section img {
+      width: 40vw;
+      height: auto;
+    }
+}
+
+@media (max-width: 1110px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 985px){
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 859px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 0.8rem;
+  }
 }
