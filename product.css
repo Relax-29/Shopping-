@@ -147,7 +147,7 @@ p {
   height: auto;
   padding: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   align-items: center;
   justify-content: center;
   gap: 1.5rem;

@@ -194,3 +194,54 @@ body {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 734px) {
+  .head {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-content h1 {
+    font-size: 4rem;
+    text-align: justify;
+  }
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  .hero-section img {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 528px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+    text-align: justify;
+  }
+  .hero-content p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero-content h1 {
+    font-size: 3.2rem;
+    text-align: justify;
+  }
+  .hero-content p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  #heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+}
