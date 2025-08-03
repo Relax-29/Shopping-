@@ -24,14 +24,13 @@
   padding: 0;
   box-sizing: border-box;
   color: #fff;
-}
+  }
 
-html,
-body {
+html, body {
   width: 100%;
   height: 100%;
 }
-
+  
 body {
   background: #833ab4;
   background: linear-gradient(
@@ -40,15 +39,16 @@ body {
     rgba(245, 88, 88, 1) 100%
   );
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
 }
 
 .todayDeals {
-  width: 100vw;
+  width: 99vw;
   height: auto;
 }
 
-/* #maintdydeal {
+
+
+/* .maintdydeal {
   width: 100%;
   height: auto;
   display: flex;
@@ -57,19 +57,19 @@ body {
   justify-content: center;
 } */
 
-#firstHeading {
+.firstHeading {
   width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
 }
 /* Make it because heading needs space */
-#blank {
+.blank {
   width: 3vw;
   height: 2vh;
 }
 
-#firstHeading h2 {
+.firstHeading h2 {
   text-align: center;
   font-family: "havelock", sans-serif;
   font-size: 2rem;
@@ -77,17 +77,22 @@ body {
   color: #fff;
 }
 
-#tdyDeal-container {
+.tdyDeal-container {
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   z-index: 9;
+  padding: 20px;
+  overflow-x: scroll;
 }
 
-#tdyDeal-container h2 {
+
+
+.tdyDeal-container h2 {
   text-align: center;
   font-size: 2rem;
   margin: 20px 0;
