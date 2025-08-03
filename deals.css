@@ -41,21 +41,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.todayDeals {
-  width: 99vw;
-  height: auto;
+.tdyDeal-container::-webkit-scrollbar {
+  display: none;
 }
 
 
-
-/* .maintdydeal {
+.todayDeals {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
+}
 
 .firstHeading {
   width: 100%;
@@ -84,13 +78,11 @@ body {
   flex-wrap: nowrap;
   gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 9;
   padding: 20px;
   overflow-x: scroll;
 }
-
-
 
 .tdyDeal-container h2 {
   text-align: center;
@@ -103,7 +95,6 @@ body {
   flex-direction: column;
   align-items: center;
   z-index: 9;
-  border-right: #fff 2px solid;
 }
 
 .image {
