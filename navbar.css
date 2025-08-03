@@ -70,14 +70,14 @@
 .sign {
   font-family: "Montserrat";
   font-size: 2.5rem;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-weight: 600;
 }
 
 .active {
   font-weight: bold;
-  border-bottom: #FFF 3px solid;
+  border-bottom: #fff 3px solid;
 }
 
 .active:hover::after {
@@ -158,7 +158,7 @@
   padding: 15px 30px;
   border-radius: 8px;
   border: none;
-  background: #FFF;
+  background: #fff;
   color: #ccc;
   font-size: 16px;
   outline: none;
@@ -179,7 +179,7 @@
 }
 
 .search-input::placeholder {
-  color: #FFF;
+  color: #fff;
   font-style: italic;
 }
 
@@ -188,11 +188,6 @@
   box-shadow: 0 0 12px rgba(127, 90, 240, 0.5);
   background-color: #1a1a1a;
 }
-
-
-
-
-
 
 /* For Mobile */
 
@@ -236,10 +231,6 @@
   transition: color 0.3s ease-in-out;
 }
 
-.links2 a:hover::after {
-  transform: scaleX(1);
-}
-
 .links2 a::after {
   content: "";
   display: block;
@@ -278,40 +269,36 @@
   transition: transform 0.3s ease-in-out;
 }
 
-
-
-
-
-@media (max-width: 734px){
-  .login1{
+@media (max-width: 734px) {
+  .login1 {
     display: none;
   }
-  .links1{
+  .links1 {
     display: none;
   }
-  .logo1{
+  .logo1 {
     display: none;
   }
-  .search-input{
+  .search-input {
     display: none;
   }
   #nav-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  }
-  .logo-div2{
-    display: flex;
-  }
-  .links2{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .login2{
+  .logo-div2 {
     display: flex;
   }
-  .logo2{
+  .links2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .login2 {
+    display: flex;
+  }
+  .logo2 {
     display: block;
   }
 }
