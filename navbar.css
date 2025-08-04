@@ -85,6 +85,7 @@
 }
 
 .login1 {
+  gap: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -93,7 +94,7 @@
 
 .login1 a {
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 
 .login1 a:hover::after {
@@ -155,7 +156,7 @@
 }
 
 .search {
-  padding: 15px 30px;
+  padding: 1vw 2vh;
   border-radius: 8px;
   border: none;
   background: #fff;
@@ -165,9 +166,9 @@
 }
 
 .search-input {
-  padding: 15px 25px;
+  padding: 1vw 2vh;
   margin-bottom: 20px;
-  width: 300px;
+  width: 20vw;
   border-radius: 12px;
   background: #fff;
   color: #eee;
@@ -179,6 +180,7 @@
 }
 
 .search-input::placeholder {
+  font-size: 1.2rem;
   color: #fff;
   font-style: italic;
 }
