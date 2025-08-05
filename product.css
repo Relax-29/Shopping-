@@ -34,8 +34,8 @@ body {
     90deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(245, 88, 88, 1) 100%
-  );
-  font-family: Arial, sans-serif;
+    );
+    font-family: Arial, sans-serif;
 }
 
 /* .container {

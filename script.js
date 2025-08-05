@@ -42,7 +42,7 @@ function animation() {
       trigger: "#topListDiv h1",
       scroller: "body",
       markers: false, 
-      start: "top 60%",
+      start: "top 80%",
       end: "top 40%",
       scrub: 1.5,
     }
@@ -58,7 +58,7 @@ function animation() {
     y: -30,
     opacity: 0,
     duration: 1,
-    stagger:0.5,
+    stagger:1.5,
   },"sametime");
   
 
