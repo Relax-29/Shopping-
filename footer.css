@@ -1,19 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-footer {
-    width: 100vw;
-    /* background-color: black; */
-    padding: 20px;
+html {
+    overflow-x: hidden;
 }
 
-.footer-content {
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+footer {
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-up-content {
     display: flex;
     justify-content: space-evenly;
+    margin: 30px 0;
 }
 
 .footer-Column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 20%;
 }
 
@@ -24,8 +49,18 @@ footer {
     gap: 20px;
 }
 .footer-logo img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 90px;
+}
+
+.footer-logo h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer-Column p {
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 .footer-info {
@@ -49,4 +84,51 @@ footer {
 .links a, h4 {
     font-family: "Inter", sans-serif;
     text-decoration: none;
+}
+
+.footer-links {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.footer-links a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.footer-links a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1.2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.copyright {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer-border {
+    background-color: #ffffff59;
+    width: 90%;
+    height: 2px;
+    border-radius: 30px;
+    margin: auto;
 }

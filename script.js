@@ -42,8 +42,8 @@ function animation() {
       trigger: "#topListDiv h1",
       scroller: "body",
       markers: false, 
-      start: "top 80%",
-      end: "top 60%",
+      start: "top 60%",
+      end: "top 40%",
       scrub: 1.5,
     }
   });
